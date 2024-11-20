@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>T-shirt Product Page</h1>
+    <div class="product">
+      <!-- Product Image Section -->
+      <div class="product-image">
+        <!-- Default image is red tshirt -->
+        <img id="tshirt-img" src="tshirt-red.jpg" alt="T-shirt" />
+      </div>
+      
+      <!-- Product Details Section -->
+      <div class="product-details">
+        <h2>Classic Cotton T-shirt</h2>
+        <p class="description">This is a high-quality cotton t-shirt, available in multiple colors. Soft, comfortable, and perfect for any occasion.</p>
+        
+        <!-- Price Section -->
+        <p class="price">$19.99</p>
+
+        <!-- Color Selection Section -->
+        <div class="color-options">
+          <label for="color">Choose Color:</label><br>
+          <button class="color-btn" onclick="changeColor('red')">Red</button>
+          <button class="color-btn" onclick="changeColor('green')">Green</button>
+          <button class="color-btn" onclick="changeColor('blue')">Blue</button>
+        </div>
+        
+        <!-- Size Selection Section -->
+        <div class="size-selection">
+          <label for="size">Choose Size:</label><br>
+          <select id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extra-large">Extra Large</option>
+          </select>
+        </div>
+        
+        <!-- Quantity Selection Section -->
+        <div class="quantity-selection">
+          <label for="quantity">Quantity:</label><br>
+          <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+        </div>
+        
+        <!-- Add to Cart Button -->
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
